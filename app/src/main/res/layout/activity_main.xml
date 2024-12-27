@@ -1,19 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-        <!-- 这是个文本视图，名字叫做tv_hello，显示的文字内容为“Hello World!” -->
-        <TextView
-            android:id="@+id/tv_hello"
-            android:layout_width="136dp"
-            android:layout_height="48dp"
-            android:text="Hello World!" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv1_hello"
-            android:layout_width="136dp"
-            android:layout_height="137dp"
-            android:baselineAligned="false"
-            android:text="Hello World!" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="3.6 实战项目-简单计算器" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_calculator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="简单计算器" />
+                <Button
+                    android:id="@+id/btn_calculator2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="简单计算器2" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

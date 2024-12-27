@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <!-- 这是个文本视图，名字叫做tv_hello，显示的文字内容为“Hello World!” -->
+        <TextView
+            android:id="@+id/tv_hello"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:text="Hello World!" />
+
+        <TextView
+            android:id="@+id/tv1_hello"
+            android:layout_width="136dp"
+            android:layout_height="137dp"
+            android:baselineAligned="false"
+            android:text="Hello World!" />
+</LinearLayout>

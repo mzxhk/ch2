@@ -20,7 +20,7 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btn_calculator) {
-            Intent intent = new Intent(this, CalculatorActivity.class);
+            Intent intent = new Intent(MainActivity3.this, MainActivity.class);
             startActivity(intent);
         }
     }
